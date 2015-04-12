@@ -8,12 +8,12 @@ public class Caching {
 	CachingTest test = new CachingTest();
 	MobileFriendlyTest test1= new MobileFriendlyTest();
 	
-  @Test(priority=1)
+  @Test(priority=0)
   public void Caching() throws IOException, InterruptedException
   {
 	test.PageCaching();  
    }
-  @Test(priority=0)
+  @Test(priority=1)
   public void MobileFriend() throws IOException, InterruptedException 
   {
 	test1.MobileFriendly();  
